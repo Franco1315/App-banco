@@ -1,1 +1,29 @@
-<p>dashboard works!</p>
+<div class="dashboard">
+
+    <div class="imagen-dashboard">
+
+    </div>
+
+
+
+
+    <div class="saldo">
+        
+        <div class="titulo-saldo">
+            <h1 class="title-dashboard" *ngIf="cliente">¡Bienvenido {{cliente.usuario}}!</h1> 
+        </div>
+
+        <div class="monto-saldo">
+            <p class="disponible" *ngIf="cliente">Saldo disponible:</p>
+            <p class="p-saldo">{{ cliente.saldo | currency:'EUR'}}</p>
+        </div>
+
+      
+    </div>
+    
+
+</div>
+
+
+    
+

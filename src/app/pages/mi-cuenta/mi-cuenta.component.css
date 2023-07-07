@@ -1,0 +1,35 @@
+.contenedor-mi-cuenta{
+    display: flex;
+}
+.img-mi-cuenta{
+    flex: 1;
+    background-image: url(https://img.freepik.com/foto-gratis/3d-render-mano-dejando-caer-monedas-oro-blanco_107791-17736.jpg?w=740&t=st=1688661885~exp=1688662485~hmac=6680a16dababe9d5d0d5bfe5065fb25450c195042a0edd9c959e6c5c981d9f44);
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.info-micuenta{
+    flex: 1;
+    margin-top: 3em;
+}
+
+.cambio-pass{
+    
+    display: block;
+    margin-bottom: 1em;
+}
+
+
+
+
+.botones-mi-cuenta{
+    display: flex;
+    margin-top: 1.5em;
+}
+
+.btn-actualizar{
+  margin-right: 2em;
+}
+
+.mensaje-contrasena-actual{
+    margin-top: 20px;
+}

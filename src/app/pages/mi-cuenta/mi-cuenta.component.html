@@ -1,0 +1,38 @@
+<div class="contenedor-mi-cuenta">
+
+    <div class="img-mi-cuenta">
+      
+    </div>
+
+
+    <div class="info-micuenta">
+
+      <h1>Mi cuenta</h1>
+      <section>
+        <p>Actualiza tu contraseña</p>
+        
+        <input placeholder="Coloca tu nueva contraseña" [(ngModel)]="password" class="cambio-pass" type="password">
+
+        
+        <input placeholder="Repite tu nueva contraseña" [(ngModel)]="password2" class="cambio-pass" type="password">
+
+        <div class="botones-mi-cuenta">
+
+          <div class="btn-actualizar" >
+            
+            <button class="btn " (click)="modificarLogin()">Actualizar contraseña</button>
+            <div class="mensaje-contrasena-actual">{{mensajePass}}</div>
+          </div>
+ 
+          <div class=" btn-cerrar">
+              <button class="btn" (click)="cerrarSesion()">Cerrar sesión</button>
+          </div>
+      
+        
+        </div>
+     
+      </section>
+
+    </div>
+
+</div>

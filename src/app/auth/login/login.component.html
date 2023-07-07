@@ -1,5 +1,23 @@
-<section>
-    <input [(ngModel)]="email" placeholder="E-mail" type="email">
-    <input [(ngModel)]="password"placeholder="Contraseña" type="password">
-    <button (click)="validarLogin()" class="btn">Acceder</button>
-</section> 
+<div class="login">
+
+    <div class="img-login">
+        <p>Welcome back!</p>
+    </div>
+    <section class="formulario">
+        <div class="texto-login">
+            <h1>Login</h1>
+             <p>Welcome back! por favor registrate</p>
+        </div>
+
+
+        <div class="casillas">
+            <label for="E-mail" id="E-mail">E-mail</label>           
+            <input [(ngModel)]="email" placeholder="E-mail" type="email">
+            <label for="">Contraseña</label> 
+            <input [(ngModel)]="password"placeholder="Contraseña" type="password">
+            <button (click)="enviarLogin()" class="btn-login">Acceder</button>
+        </div>
+
+    </section>
+
+</div>

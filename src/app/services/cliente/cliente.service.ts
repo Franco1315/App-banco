@@ -1,12 +1,15 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { clientes } from 'src/app/datos/usuarios-ejemplo';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ClienteService {
 
-  constructor() { }
+  urlApi: string = "http://localhost:8080/cliente"
+
+  constructor(private http:HttpClient) { }
 
   hacerLogin(email:string, password:string){
     for(let i = 0; i < clientes.length; i++){
@@ -17,4 +20,32 @@ export class ClienteService {
     }
     return null;
   }
+
+  obtenerClientes(){
+    return this.http.get(this.urlApi);
+  }
+
+  login(correo: String, pass: String){
+    const url= `${this.urlApi}/login?correo=${correo}&pass=${pass}`;
+    return this.http.get(url);
+  }
+
+  craerSesion(clienteLogueado: any){
+    const clienteJSON = JSON.stringify(clienteLogueado);
+    sessionStorage.setItem("sesion", clienteJSON);
+  }
+
+  leerSesion(){
+    const clienteJSON = sessionStorage.getItem("sesion");
+    if(clienteJSON){
+      const clienteLogueado = JSON.parse(clienteJSON);
+      return clienteLogueado;
+    }
+    return null;
+  }
+
+  cerrarSesion(){
+    sessionStorage.removeItem("sesion");
+  }
+
 }

@@ -1,0 +1,27 @@
+.nueva-transferecnia{
+    display: flex;
+}
+
+.img-nueva{
+    background-image: url(https://img.freepik.com/foto-gratis/cartera-ilustracion-3d-monedas-tarjetas-credito_107791-16572.jpg?w=900&t=st=1688659134~exp=1688659734~hmac=c20391fde2d3870e64f6f2917c821e7800e7230a913b6bd7955608545bca4cc5);
+    flex: 1;
+    background-repeat: no-repeat;
+    height: 80vh;
+
+}
+
+.info-nt{
+    flex: 1;
+    margin-top: .50em;
+}
+
+label, input{
+    display: block;
+}
+
+.btn-nueva{
+    width: 25em;
+    font-size: 1em;
+    margin-top: 2em;
+
+}

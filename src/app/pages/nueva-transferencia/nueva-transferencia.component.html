@@ -1,0 +1,27 @@
+<div class="nueva-transferecnia">
+
+    <div class="img-nueva">
+
+    </div>
+
+    <div class="info-nt">
+        <h1>Nueva transferencia</h1>
+        <section class="casillas">
+            <label for="">ID benificiario</label>
+            <input placeholder="ID beneficiario" [(ngModel)]=" nuevaTransferencia.beneficiario.id" type="text">
+
+            <label for="">Monto</label>
+            <input  [(ngModel)]=" nuevaTransferencia.importe" step="0.01" type="number">
+
+            <label for="">Concepto</label>
+            <input placeholder="Concepto" [(ngModel)]=" nuevaTransferencia.concepto" type="text">
+
+            <button  class="btn btn-nueva" (click)="enviarTransferencia()">Enviar</button>
+            <p>{{ feedback }}</p>
+
+        </section>
+    </div>
+
+</div>
+
+

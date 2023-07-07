@@ -1,0 +1,26 @@
+
+.trasnferencias{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    
+}
+
+.card{
+    cursor: pointer;
+    font-size: var(--font-primary);
+    height: 60vh;
+    margin: 2em;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: .80em;
+    text-align: center;
+    border-radius: 20px;
+    border: 3px solid var(--color-primary);
+}
+
+img{
+    width: 80%;
+}
